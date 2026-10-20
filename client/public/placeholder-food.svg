@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="100%" height="100%" fill="#F5EBE1" />
+  <circle cx="200" cy="140" r="70" fill="#E8D7C5" />
+  <path d="M160 140 C160 110 240 110 240 140 Z" fill="#D97706" />
+  <rect x="155" y="145" width="90" height="25" rx="5" fill="#B45309" />
+  <text x="200" y="240" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="600" fill="#78350F" text-anchor="middle">
+    Smart Bakery &amp; Café
+  </text>
+  <text x="200" y="260" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#A16207" text-anchor="middle">
+    Artisanal Delights Fresh Daily
+  </text>
+</svg>

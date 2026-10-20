@@ -1,0 +1,24 @@
+{
+  "name": "smart-bakery-cafe-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart Bakery & Café — Full-Stack Monorepo Workspace Root",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "seed:admin": "npm run seed:admin --prefix server",
+    "test": "npm test --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client"
+  },
+  "keywords": [
+    "bakery",
+    "fullstack",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Smart Bakery & Café Engineering Team",
+  "license": "ISC"
+}

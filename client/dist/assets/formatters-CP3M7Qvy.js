@@ -1,0 +1,1 @@
+const t=r=>r==null||isNaN(r)?"₹0":new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(r),n=r=>r?new Date(r).toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"}):"N/A",a=r=>r?`${r} mins`:"Ready to serve",o=r=>r?[r.street,r.landmark,r.city,r.postalCode].filter(Boolean).join(", "):"";export{a,n as b,o as c,t as f};
