@@ -19,8 +19,19 @@ export const ToastProvider = ({ children }) => {
     setToasts((prev) => prev.filter((t) => t.id !== id));
   };
 
+  const showToast = addToast;
+
   return (
-    <ToastContext.Provider value={{ addToast }}>
+    <ToastContext.Provider
+      value={{
+        addToast,
+        showToast,
+        toast: addToast,
+        showSuccess: (msg) => addToast(msg, 'success'),
+        showError: (msg) => addToast(msg, 'error'),
+        showInfo: (msg) => addToast(msg, 'info'),
+      }}
+    >
       {children}
       {/* Toast Floating Container */}
       <div

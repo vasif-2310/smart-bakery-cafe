@@ -17,7 +17,7 @@ erDiagram
     ORDER ||--o| PAYMENT : "settled_via"
     ORDER ||--o| DELIVERY_ASSIGNMENT : "dispatched_via"
     COUPON ||--o{ ORDER : "applied_to"
-    
+    cd "c:\Users\DELL\Desktop\bakery website\smart-bakery-cafe"
     USER {
         ObjectId _id PK
         string name

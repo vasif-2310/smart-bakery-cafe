@@ -631,8 +631,8 @@ export const CheckoutPage = () => {
                   gap: '10px',
                 }}
               >
-                {cartItems.map((item) => (
-                  <div key={item.cartItemId} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem' }}>
+                {cartItems.map((item, index) => (
+                  <div key={item.itemKey || item.cartItemId || item.productId || index} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem' }}>
                     <div>
                       <span style={{ fontWeight: 600, color: 'var(--primary-espresso)' }}>
                         {item.quantity}x {item.name}
@@ -654,7 +654,7 @@ export const CheckoutPage = () => {
                       )}
                     </div>
                     <span style={{ fontWeight: 600, color: 'var(--text-main)' }}>
-                      ₹{item.finalPrice * item.quantity}
+                      ₹{(item.unitPrice || item.finalPrice || item.basePrice || item.price || 0) * item.quantity}
                     </span>
                   </div>
                 ))}

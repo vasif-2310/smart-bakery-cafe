@@ -374,7 +374,7 @@ export const CartPage = () => {
               </div>
 
               <button
-                onClick={() => navigate('/payment')}
+                onClick={() => navigate('/checkout')}
                 className="btn btn-primary btn-lg"
                 style={{
                   width: '100%',
